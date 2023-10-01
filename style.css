@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+	min-width: 370px;
+	min-height: 100vh;
+}
+
+.app {
+	min-height: 100vh;
+}
+
+.title {
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: center;
+	margin-block: 2rem;
+}
+
+.container {
+	display: grid;
+	place-content: center;
+	place-items: center;
+	padding: 3rem 1rem;
+	gap: 2rem;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	gap: 4px;
+	width: 310px;
+}
+
+.player {
+	font-weight: 500;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	font-size: 36px;
+	cursor: pointer;
+	background-color: #efefef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.restart {
+	font-weight: 500;
+	padding: 0.6rem 1.2rem;
+	border-radius: 0.6rem;
+	background-color: lightgreen;
+	outline: none;
+	border: 0px solid transparent;
+	cursor: pointer;
+}
+
+.restart:hover {
+	background-color: rgb(164, 231, 164);
+}
+.restart:active {
+	background-color: rgb(174, 230, 174);
+}
+
+.restart:disabled {
+	pointer-events: none;
+}
